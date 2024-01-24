@@ -1,0 +1,27 @@
+Valid models are as follows
+
+'button grass'
+'spinifex grasslands'
+'grasslands'
+'grassy woodlands'
+'mallee-heaths'
+'wet eucalypt forests'
+'shrublands'
+'pine plantations'
+'dry eucalypt forests'
+
+
+Each model weights FBI calculations as follows:
+    
+'button grass':         1,
+'spinifex grasslands':  1.1,
+'grasslands':           1.15,
+'grassy woodlands':     1.2,
+'mallee-heaths':        1.25,
+'wet eucalypt forests': 1.3,
+'shrublands':           1.4,
+'pine plantations':     1.45,
+'dry eucalypt forests': 1.5
+
+
+From these models, we can see 'dry eucalypt forests' are 50% more sensitive to fire danger than 'button grass'
