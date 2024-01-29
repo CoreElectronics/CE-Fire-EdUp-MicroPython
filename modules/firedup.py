@@ -141,8 +141,9 @@ class Firedup:
         return self._slope_degrees
     @model.setter
     def slope_degrees(self, value):
-        assert 0 <= value <= 90, ".slope_degrees must be between 0.0 and 90.0"
-        self._slope_weight = 1 + 0.15 * value/90
+        assert -90 <= value <= 90, ".slope_degrees must be between -90.0 and 90.0"
+        self._slope_degrees = value
+        self._slope_weight = 1 + 0.5 * abs(value)/90
     
     
     def calculate_rating(self, data):
